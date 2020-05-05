@@ -150,8 +150,8 @@ void loop() {
     {
 
       //Uncomment out these two serial print commands in order to export the data to excel.
-      //Serial.print((i * 1.0 * SAMPLING_FREQUENCY) / SAMPLES, 1);
-      //Serial.print(" ");
+      Serial.print((i * 1.0 * SAMPLING_FREQUENCY) / SAMPLES, 1);
+      Serial.print(" , ");
       x = (i * 1.0 * SAMPLING_FREQUENCY) / SAMPLES; //Frequency read from FFT
       y = vReal[i];                                 //Magnitude read from FFT
       Serial.println(vReal[i], 1);    //This line is used to show the FFT chart in the serial plotter.
